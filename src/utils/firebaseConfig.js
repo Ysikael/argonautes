@@ -8,8 +8,6 @@ const firebaseConfig = {
   storageBucket: "argonautes-319bf.appspot.com",
   messagingSenderId: "39222529065",
   appId: "1:39222529065:web:d5a034d4fbb041f35e2038"
-  //test
-  //test
 };
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
