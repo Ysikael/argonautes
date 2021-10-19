@@ -32,8 +32,8 @@ const App = () => {
       {isSignedIn ? (
         <Main />
       ) : (
-        <div className="login-page">
-          <h1>Argonautes</h1>
+        <div>
+          <h1 style={{fontsize: '2.5em', color: 'blue', fontFamily:'Roboto'}}> Les Argonautes</h1>
           <StyledFirebaseAuth
             uiConfig={uiConfig}
             firebaseAuth={firebase.auth()}
