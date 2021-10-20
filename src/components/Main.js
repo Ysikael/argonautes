@@ -15,8 +15,18 @@ const baseline = {
   marginTop: '2em',
 }
 const button = {
-  color: 'green',
-  marginTop: '4em',
+  color: 'white',
+  fontWeight: 'bold',
+  marginTop: '5em',
+  backgroundColor: '#C1082A',
+  width: '100px',
+  height: '30px',
+  borderRadius: '10px',
+  border : '1px solid red',
+  hover: {
+    transform: "scale(1.3)",
+    transition: ".3s ease-in-out",
+  }
 }
 const header = {
   textAlign: 'center',
@@ -32,7 +42,7 @@ const Main = () => {
         <img style={{maxWidth: '96px', marginRight:'10px'}} src="https://www.wildcodeschool.com/assets/logo_main-e4f3f744c8e717f1b7df3858dce55a86c63d4766d5d9a7f454250145f097c2fe.png" alt="Wild Code School logo" />
            Les Argonautes</h1>
       </header>
-      <h4 style={{fontFamily: 'Roboto', color: '#f76c6c'}}>Bonjour {firebase.auth().currentUser.displayName}</h4>
+      <h4 style={{fontFamily: 'Roboto', color: '#f76c6c', marginBottom:'4em'}}>Bonjour {firebase.auth().currentUser.displayName}</h4>
       <h2 style={{fontFamily: 'Roboto', marginBottom:'1.5em'}}>Ajouter un(e) Argonaute</h2>
       <Create />
       <h2 style={{fontFamily: 'Roboto'}}>Membres de l'équipage</h2>

@@ -12,7 +12,7 @@ const header = {
 const footer = {
   height: '50px',
   backgroundColor: '#f76c6c',
-  marginTop:'8em',
+  marginTop:'6em',
 }
 const baseline = {
   color: 'white',
