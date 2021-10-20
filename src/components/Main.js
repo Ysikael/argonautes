@@ -11,19 +11,26 @@ const baseline = {
   fontFamily: 'Roboto',
   lineHeight:'50px',
   marginTop: '2em',
-
 }
 const button = {
   color: 'green'
+}
+const header = {
+  textAlign: 'center',
+  padding: '2em',
+  backgroundColor: '#f4f4f4',
 }
 
 const Main = () => {
   return (
     <main>
-      <nav>
-        <h1 style={{fontsize: '2.5em', color: 'red', fontFamily: 'Roboto'}}> Les Argonautes</h1>
-        <h4>Bonjour {firebase.auth().currentUser.displayName}</h4>
-      </nav>
+      <header style={header}>
+        <h1 style={{fontsize: '2.5em', color: 'black', fontFamily: 'Roboto'}}>
+        <img style={{maxWidth: '96px', marginRight:'10px'}} src="https://www.wildcodeschool.com/assets/logo_main-e4f3f744c8e717f1b7df3858dce55a86c63d4766d5d9a7f454250145f097c2fe.png" alt="Wild Code School logo" />
+           Les Argonautes</h1>
+      </header>
+      <h4 style={{fontFamily: 'Roboto', color: '#f76c6c'}}>Bonjour {firebase.auth().currentUser.displayName}</h4>
+      <h2 style={{fontFamily: 'Roboto'}}>Ajouter un(e) Argonaute</h2>
       <button style={button} onClick={() => firebase.auth().signOut()}>Déconnecter</button>
       {/* app component */}
       <div style={footer}>
