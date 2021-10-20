@@ -1,5 +1,7 @@
 import React from "react";
 import firebase from "../utils/firebaseConfig";
+import Create from "./Create";
+import Read from "./Read";
 //import "/style.css";
 
 const footer = {
@@ -13,7 +15,8 @@ const baseline = {
   marginTop: '2em',
 }
 const button = {
-  color: 'green'
+  color: 'green',
+  marginTop: '4em',
 }
 const header = {
   textAlign: 'center',
@@ -30,9 +33,11 @@ const Main = () => {
            Les Argonautes</h1>
       </header>
       <h4 style={{fontFamily: 'Roboto', color: '#f76c6c'}}>Bonjour {firebase.auth().currentUser.displayName}</h4>
-      <h2 style={{fontFamily: 'Roboto'}}>Ajouter un(e) Argonaute</h2>
+      <h2 style={{fontFamily: 'Roboto', marginBottom:'1.5em'}}>Ajouter un(e) Argonaute</h2>
+      <Create />
+      <h2 style={{fontFamily: 'Roboto'}}>Membres de l'équipage</h2>
+      <Read />
       <button style={button} onClick={() => firebase.auth().signOut()}>Déconnecter</button>
-      {/* app component */}
       <div style={footer}>
       <p style={baseline}>Réalisé par Jason en Anthestérion de l'an 515 avant JC</p>
       </div>

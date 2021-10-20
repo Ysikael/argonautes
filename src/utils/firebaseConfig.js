@@ -3,7 +3,7 @@ import firebase from 'firebase';
 const firebaseConfig = {
   apiKey: "AIzaSyBaoR_Pp5gezk7aT1fYwvNx4hS5B1pSkhQ",
   authDomain: "argonautes-319bf.firebaseapp.com",
-
+  databaseURL: "https://argonautes-319bf-default-rtdb.firebaseio.com",
   projectId: "argonautes-319bf",
   storageBucket: "argonautes-319bf.appspot.com",
   messagingSenderId: "39222529065",
